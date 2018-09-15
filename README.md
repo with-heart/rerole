@@ -13,7 +13,7 @@
 $ npm i -g @with-heart/rerole
 ```
 
-3. Use the `source` command found in the postinstall message or by running `npm run showBashMessage` (**note: rerole will not work if this step is not completed**)
+3. Use the `source` command found in the postinstall message or by running `rerole showCommand` (**note: rerole will not work if this step is not completed**)
 
 ## Usage
 
