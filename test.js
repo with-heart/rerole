@@ -1,6 +1,6 @@
 const fs = require('fs')
 const os = require('os')
-const {readConfigFile, findRoleNames} = require('./fns')
+const {readConfigFile, findRoleNames, writeRoleFile} = require('./fns')
 
 jest.mock('fs')
 jest.mock('os')
@@ -42,4 +42,17 @@ test('findRoleNames returns all valid role names from config file', () => {
   const roleNames = findRoleNames(fileContents)
 
   expect(roleNames).toEqual(['default', 'profile1', 'profile2', 'pro.file-3'])
+})
+
+test('writeRoleFile writes the provided role to "__reroleRoleName"', () => {
+  const pwd = '/Users/username/.rerole'
+
+  const role = 'AWSRole'
+
+  writeRoleFile(role)
+
+  expect(fs.writeFileSync).toHaveBeenCalledWith(
+    `${__dirname}/__reroleRoleName`,
+    role,
+  )
 })

@@ -23,7 +23,13 @@ const findRoleNames = contents => {
   return matches
 }
 
+const writeRoleFile = role => {
+  const file = path.join(__dirname, '__reroleRoleName')
+  fs.writeFileSync(file, role)
+}
+
 module.exports = {
   readConfigFile,
   findRoleNames,
+  writeRoleFile,
 }
