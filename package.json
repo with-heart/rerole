@@ -1,13 +1,16 @@
 {
   "name": "@with-heart/rerole",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Menu wrapper for assume-role",
   "main": "index.js",
   "bin": {
     "rerole": "index.js"
   },
   "repository": "https://github.com/with-heart/rerole",
-  "keywords": ["assume-role", "aws"],
+  "keywords": [
+    "assume-role",
+    "aws"
+  ],
   "license": "MIT",
   "scripts": {
     "test": "jest"
