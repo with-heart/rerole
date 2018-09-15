@@ -13,6 +13,8 @@
     "start": "",
     "test": ""
   },
-  "dependencies": {},
+  "dependencies": {
+    "inquirer": "^6.2.0"
+  },
   "devDependencies": {}
 }
