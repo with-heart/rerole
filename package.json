@@ -16,6 +16,7 @@
     "test": "jest"
   },
   "dependencies": {
+    "chalk": "^2.4.1",
     "inquirer": "^6.2.0"
   },
   "devDependencies": {
