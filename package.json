@@ -1,6 +1,6 @@
 {
   "name": "@with-heart/rerole",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "Menu wrapper for assume-role",
   "main": "index.js",
   "bin": {
