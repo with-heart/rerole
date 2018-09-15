@@ -4,17 +4,15 @@
   "description": "Menu wrapper for assume-role",
   "main": "index.js",
   "repository": "https://github.com/with-heart/rerole",
-  "keywords": [
-    "assume-role",
-    "aws"
-  ],
+  "keywords": ["assume-role", "aws"],
   "license": "MIT",
   "scripts": {
-    "start": "",
-    "test": ""
+    "test": "jest"
   },
   "dependencies": {
     "inquirer": "^6.2.0"
   },
-  "devDependencies": {}
+  "devDependencies": {
+    "jest": "^23.6.0"
+  }
 }
