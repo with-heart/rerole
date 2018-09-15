@@ -24,7 +24,7 @@ const findRoleNames = contents => {
 }
 
 const writeRoleFile = role => {
-  const file = path.join(__dirname, '__reroleRoleName')
+  const file = path.join(process.cwd(), '__reroleRoleName')
   fs.writeFileSync(file, role)
 }
 

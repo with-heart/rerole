@@ -45,14 +45,10 @@ test('findRoleNames returns all valid role names from config file', () => {
 })
 
 test('writeRoleFile writes the provided role to "__reroleRoleName"', () => {
-  const pwd = '/Users/username/.rerole'
-
+  const pwd = process.cwd()
   const role = 'AWSRole'
 
   writeRoleFile(role)
 
-  expect(fs.writeFileSync).toHaveBeenCalledWith(
-    `${__dirname}/__reroleRoleName`,
-    role,
-  )
+  expect(fs.writeFileSync).toHaveBeenCalledWith(`${pwd}/__reroleRoleName`, role)
 })
