@@ -1,3 +1,5 @@
+#!/usr/bin/env node
+
 const {readConfigFile, findRoleNames, writeRoleFile} = require('./fns')
 const {showPrompt} = require('./prompt')
 
