@@ -1,0 +1,10 @@
+#!/usr/bin/env bash
+
+function __rerole {
+  command rerole 1>&3
+  local role=$(cat __reroleRoleName)
+  rm __reroleRoleName
+  echo 'eval $(assume-role' $role')'
+}
+
+alias rerole='exec 3>&1; eval $(__rerole 4>&3)'
